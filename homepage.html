@@ -46,52 +46,147 @@ This challenge will test your understanding of linking, structure, forms, tables
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation bar: Link to sections and other HTML files -->
-    <nav>
-        <!-- Example: <a href="#about">About Section</a> | <a href="#contact">Contact Section</a> | <a href="about.html">About Page</a> | <a href="contact.html">Contact Page</a> -->
+    <!-- Navigation Section: Links to sections and other pages -->
+    <nav id="main-navigation">
+        <h2>Site Navigation</h2>
+        <ul>
+            <li><a href="#about-section">About Section</a></li>
+            <li><a href="#contact-section">Contact Section</a></li>
+            <li><a href="about.html">About Page</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
     </nav>
+    
     <hr>
-    <!-- Main content area -->
+    
+    <!-- Main content area with two sections -->
     <div class="main-content" id="main-content">
-        <!-- Section 1: About  add id call it about section -->
-        <section >
-            <!-- Your About content here -->
+        <!-- About section with id for navigation -->
+        <section id="about-section">
+            <h1>About Me</h1>
+            <p>Hello! I'm a web development student passionate about creating clean, functional websites. I enjoy learning new technologies and solving problems through code.</p>
+            
+            <h2>My Interests</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Photography</li>
+                <li>Hiking</li>
+            </ul>
         </section>
-        <!-- Section 2: add id call it  Contact  -->
-        <section >
-            <!-- Your Contact content here -->
+        
+        <!-- Contact section with id for navigation -->
+        <section id="contact-section">
+            <h1>Contact Information</h1>
+            <p>Feel free to reach out to me through any of the following methods. I typically respond within 24 hours.</p>
+            
+            <h2>Quick Contact Info</h2>
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>student@example.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>(555) 123-4567</td>
+                </tr>
+                <tr>
+                    <td>Office Hours</td>
+                    <td>Mon-Fri, 9am-5pm</td>
+                </tr>
+            </table>
         </section>
     </div>
+    
     <hr>
-    <!-- Embed another HTML file using iframe add a youtube video -->
+    
+    <!-- Iframe area showing embedded content -->
     <div class="iframe-area" id="iframe-area">
-        <!-- Example: <iframe src="about.html" width="400" height="200"></iframe> -->
+        <h2>About Me (Embedded)</h2>
+        <!-- Embedded about.html page -->
+        <iframe src="about.html" width="600" height="400" title="About Me Page"></iframe>
+        
+        <h2>My Favorite YouTube Video</h2>
+        <!-- Embedded YouTube video -->
+         <h2>The Future of AI</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LxIjG50GVf8?si=62jxHaTU9Mz6sJ5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    
     <hr>
-    <!-- Small form with labels and inputs -->
+    
+    <!-- Form area with inputs -->
     <div class="form-area" id="form-area">
-        <!-- Example:
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit">
+        <h2>Contact Form</h2>
+        <p>Please fill out this form and I'll get back to you as soon as possible.</p>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
         </form>
-        -->
     </div>
+    
     <hr>
-    <!-- Table to display names but dont copy mine add more names and more rows atleast 3 rows and columns -->
+    
+    <!-- Table area displaying information -->
     <div class="table-area" id="table-area">
-        <!-- Example:
+        <h2>Web Development Team</h2>
+        <p>Here are some members of our development team who you might work with:</p>
+        
         <table>
-            <tr><th>Name</th></tr>
-            <tr><td>Alice</td></tr>
-            <tr><td>Bob</td></tr>
-            <tr><td>Charlie</td></tr>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>Sarah Johnson</td>
+                <td>Frontend Developer</td>
+                <td>5 years</td>
+            </tr>
+            <tr>
+                <td>Michael Chen</td>
+                <td>Backend Developer</td>
+                <td>7 years</td>
+            </tr>
+            <tr>
+                <td>Jessica Williams</td>
+                <td>UI/UX Designer</td>
+                <td>4 years</td>
+            </tr>
+            <tr>
+                <td>David Brown</td>
+                <td>Project Manager</td>
+                <td>10 years</td>
+            </tr>
         </table>
-        -->
     </div>
-    <!-- Add comments throughout your code explaining your choices! -->
+    
+    <hr>
+    
+    <!-- Footer section -->
+    <footer id="main-footer">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p><a href="#main-navigation">Back to Top</a></p>
+    </footer>
 </body>
 </html>
