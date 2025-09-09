@@ -46,7 +46,7 @@ This challenge will test your understanding of linking, structure, forms, tables
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Section -->
+    <!-- Navigation Section: Links to sections and other pages -->
     <nav id="main-navigation">
         <h2>Site Navigation</h2>
         <ul>
@@ -56,15 +56,16 @@ This challenge will test your understanding of linking, structure, forms, tables
             <li><a href="contact.html">Contact Page</a></li>
         </ul>
     </nav>
-
+    
     <hr>
-
-    <!-- Main Content -->
+    
+    <!-- Main content area with two sections -->
     <div class="main-content" id="main-content">
-        <!-- About Section -->
+        <!-- About section with id for navigation -->
         <section id="about-section">
             <h1>About Me</h1>
             <p>Hello! I'm a web development student passionate about creating clean, functional websites. I enjoy learning new technologies and solving problems through code.</p>
+            
             <h2>My Interests</h2>
             <ul>
                 <li>Web Development</li>
@@ -73,14 +74,14 @@ This challenge will test your understanding of linking, structure, forms, tables
                 <li>Hiking</li>
             </ul>
         </section>
-
-        <!-- Contact Section -->
+        
+        <!-- Contact section with id for navigation -->
         <section id="contact-section">
             <h1>Contact Information</h1>
             <p>Feel free to reach out to me through any of the following methods. I typically respond within 24 hours.</p>
-
+            
             <h2>Quick Contact Info</h2>
-            <table id="contact-table">
+            <table>
                 <tr>
                     <th>Method</th>
                     <th>Details</th>
@@ -100,44 +101,58 @@ This challenge will test your understanding of linking, structure, forms, tables
             </table>
         </section>
     </div>
-
+    
     <hr>
-
-    <!-- Iframe Section -->
+    
+    <!-- Iframe area showing embedded content -->
     <div class="iframe-area" id="iframe-area">
         <h2>About Me (Embedded)</h2>
+        <!-- Embedded about.html page -->
         <iframe src="about.html" width="600" height="400" title="About Me Page"></iframe>
-
-        <h2>The Future of AI</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LxIjG50GVf8?si=62jxHaTU9Mz6sJ5D" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        
+        <h2>My Favorite YouTube Video</h2>
+        <!-- Embedded YouTube video -->
+         <h2>The Future of AI</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LxIjG50GVf8?si=62jxHaTU9Mz6sJ5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-
+    
     <hr>
-
-    <!-- Form Section -->
+    
+    <!-- Form area with inputs -->
     <div class="form-area" id="form-area">
         <h2>Contact Form</h2>
         <p>Please fill out this form and I'll get back to you as soon as possible.</p>
-        <form action="#" method="post" id="contact-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-            <input type="submit" value="Send Message">
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
         </form>
     </div>
-
+    
     <hr>
-
-    <!-- Table Section -->
+    
+    <!-- Table area displaying information -->
     <div class="table-area" id="table-area">
         <h2>Web Development Team</h2>
-        <table id="team-table">
+        <p>Here are some members of our development team who you might work with:</p>
+        
+        <table>
             <tr>
                 <th>Name</th>
                 <th>Role</th>
@@ -165,10 +180,10 @@ This challenge will test your understanding of linking, structure, forms, tables
             </tr>
         </table>
     </div>
-
+    
     <hr>
-
-    <!-- Footer -->
+    
+    <!-- Footer section -->
     <footer id="main-footer">
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
         <p><a href="#main-navigation">Back to Top</a></p>
